@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Biblioteca | Universidad X</title><link rel="stylesheet" href="/style.css"></head><body><section id="login" class="login institutional-login">
+<div class="institution-mark" aria-label="Universidad X, Biblioteca"><span class="institution-symbol" aria-hidden="true">UX</span><span>UNIVERSIDAD X<small>Sistema de Bibliotecas</small></span></div>
+<form id="loginForm" class="panel institutional-card">
+<h1>Acceso a la biblioteca</h1>
+<div class="institution-notice">Bienvenido al Sistema de Bibliotecas de Universidad X.<br><span>Ingresa con tu RUT enrolado para consultar y solicitar material.</span></div>
+<label for="rut">RUT</label>
+<div class="institution-field"><span aria-hidden="true">●</span><input id="rut" name="rut" required autocomplete="username" placeholder="Ejemplo: 90000003-0" autocapitalize="none" spellcheck="false"></div>
+<label for="password">Contraseña</label>
+<div class="institution-field"><span aria-hidden="true">▣</span><input id="password" name="password" type="password" required autocomplete="current-password" placeholder="Contraseña"><button id="togglePassword" class="password-toggle" type="button" aria-controls="password" aria-pressed="false">Mostrar</button></div>
+<button class="institution-submit" type="submit">INGRESAR</button>
+<p id="loginError" role="alert"></p>
+<button id="loginHelp" class="login-help" type="button">¿Olvidaste tu clave? · Ayuda de acceso</button>
+
+</form>
+<p class="institution-caption">Universidad X · Proyecto académico de Carolina<br>Catálogo, reservas, préstamos, devoluciones y multas</p>
+<dialog id="helpDialog"><h2>Ayuda para ingresar</h2><p>Debes estar enrolado para ingresar con tu RUT. Si necesitas acceso, solicita el enrolamiento a Jorge, bibliotecario.</p><p>La contraseña inicial corresponde a tu RUT sin puntos, guion ni dígito verificador.</p><form method="dialog"><button>Cerrar ayuda</button></form></dialog>
+</section><div id="workspace" hidden><aside><a class="brand" href="/">SG<span>Biblioteca</span></a><p class="eyebrow">UNIVERSIDAD X</p><nav><button data-page="dashboard">Inicio</button><button data-page="catalog">Catálogo y reservas</button><button data-page="account">Mi tarjeta de biblioteca</button><button data-page="loans">Préstamos y devoluciones</button><button data-page="fines">Multas y pagos</button><button data-page="reports">Reportes</button><button data-page="audit">Historial y avisos</button><button data-page="users">Usuarios / enrolamiento</button></nav><div class="asidebottom"><span id="identity"></span><button id="logout">Cerrar sesión</button></div></aside><main><header><div><p class="eyebrow">SISTEMA DE GESTIÓN DE BIBLIOTECAS</p><h1 id="pageTitle">Inicio</h1></div></header><div id="toast" role="status" hidden></div><div id="content"></div></main></div><script src="/app.js"></script></body></html>
