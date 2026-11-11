@@ -5,3 +5,7 @@ __pycache__/
 node_modules/
 .env
 .env.*
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
